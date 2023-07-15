@@ -7,7 +7,10 @@ class ImagesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Images'),
+        title: const Text(
+          'Primeira App Bar',
+          style: TextStyle(fontFamily: 'Tourney'),
+        ),
       ),
       body: Center(
         child: Column(
@@ -24,7 +27,10 @@ class ImagesPage extends StatelessWidget {
               child: Center(
                 child: Text(
                   'Paisagem',
-                  style: TextStyle(backgroundColor: Colors.white.withOpacity(0.6), fontSize: 20,),
+                  style: TextStyle(
+                    backgroundColor: Colors.white.withOpacity(0.6),
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ),
