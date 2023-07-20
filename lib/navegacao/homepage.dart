@@ -14,6 +14,10 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Text(
+              'Thais é linda! ❤️',
+              style: TextStyle(fontSize: 28, color: Colors.pink),
+            ),
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context).push(

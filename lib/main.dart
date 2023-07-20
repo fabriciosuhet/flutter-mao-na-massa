@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_maonamassa/navegacao/homepage.dart' as navegacao;
+import 'package:flutter_maonamassa/navegacao/navegacao_params/datalhe.dart';
+import 'package:flutter_maonamassa/navegacao/navegacao_params/list.dart';
 import 'package:flutter_maonamassa/navegacao/page1.dart';
 import 'package:flutter_maonamassa/navegacao/page2.dart';
 import 'package:flutter_maonamassa/navegacao/page3.dart';
@@ -22,7 +24,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+      
       ),
+      initialRoute: '/navegacao_param',
       // home: const HomePage(),
       routes: {
         '/': (_) => const navegacao.HomePage(),
@@ -30,6 +34,8 @@ class MyApp extends StatelessWidget {
         Page2.routeName: (_) =>  const Page2(),
         '/page3': (_) =>  const Page3(),
         '/page4': (_) =>  const Page4(),
+        '/navegacao_param': (_) => const Lista(),
+        '/detalhe': (_) => const Detalhes(),
       },
       // home: const navegacao.HomePage(),
     );
